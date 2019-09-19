@@ -3,7 +3,7 @@ import Cell from './Cell';
 
 import {generateMap, placeBugs, populateMap} from '../helpers';
 
-class Map extends Component {
+export default class Map extends Component {
     constructor(props) {
         super(props);
 
@@ -47,4 +47,3 @@ class Map extends Component {
     }
 }
 
-export default Map;
