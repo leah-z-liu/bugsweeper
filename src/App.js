@@ -6,8 +6,11 @@ function App() {
   return (
     <Fragment>
       <h1>Welcome to Bugsweeper</h1>
-      <div class="btn">
-        <a href=".">Start again!</a>
+      <div className="info">
+        <h2>There are 15 bugs. Find them all!</h2>
+      </div>
+      <div className="info">
+        <a href=".">New Game</a>
       </div>
       <Map />
     </Fragment>
