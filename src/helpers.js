@@ -28,37 +28,36 @@ export function placeBugs(map, bugCount) {
   return map;
 }
 
-export function populateMap(map, bugCount) {
+export function populateMap(map) {
   const rows = map.length;
   const cols = map[0].length;
 
-  while (bugCount) {
-    for (let i = 0; i < rows; i++) {
-      for (let j = 0; j < cols; j++) {
-        if (map[i][j] === "bug") {
-          addOneToNeighbors(map, i, j);
-          bugCount--;
-        }
+  for (let i = 0; i < rows; i++) {
+    for (let j = 0; j < cols; j++) {
+      if (map[i][j] === "bug") {
+        addOneToNeighbors(map, i, j);
       }
     }
   }
-
   return map;
 }
 
 function addOneToNeighbors(map, i, j) {
-  const rows = [i - 1, i + 1];
-  const cols = [j - 1, j + 1];
+  const rows = [i - 1, i, i + 1];
+  const cols = [j - 1, j, j + 1];
 
   for (let row of rows) {
     if (map[row]) {
       for (let col of cols) {
         if (map[row][col] !== undefined && map[row][col] !== "bug") {
-          map[row][col] = map[row][col] ? map[row][col]++ : 1;
+          if (map[row][col]) {
+            map[row][col]++;
+          } else {
+            map[row][col] = 1;
+          }
         }
       }
     }
   }
-
   return map;
 }

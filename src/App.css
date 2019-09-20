@@ -10,17 +10,35 @@ body {
   font-family: "Indie Flower", cursive;
   background-color: #fff;
   color: #333;
+  overflow: hidden;
 }
 
 h1 {
   text-align: center;
   font-size: 3rem;
   margin-top: 80px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  width: 100%;
+}
+
+a {
+  display: block;
+  color: #333;
+  width: 170px;
+  text-align: center;
+  font-size: 2rem;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 4px;
+  margin: auto;
 }
 
 .main {
   width: 400px;
-  margin: 150px auto;
+  margin: 120px auto;
 }
 
 table {
@@ -35,11 +53,18 @@ tr {
 }
 
 td {
-  background-color: rgb(48, 45, 45);
-  border-bottom: 1px solid grey;
-  border-right: 1px solid grey;
-  border-top: 1px solid lightgray;
-  border-left: 1px solid lightgray;
+  cursor: pointer;
+  background-color: #333;
+  border: 1px solid rgba(235, 235, 235, 0.712);
+}
+
+td:hover {
+  background: radial-gradient(
+    circle,
+    rgba(9, 4, 107, 1) 0%,
+    rgba(9, 9, 121, 1) 13%,
+    rgba(0, 212, 255, 1) 100%
+  );
 }
 
 img {
@@ -55,8 +80,8 @@ img {
 }
 
 .clicked:not(.isBug) {
-  background-color: rgba(66, 62, 62, 0.924);
-  color: #fff;
+  background-color: #fff;
+  color: #333;
   padding-left: 14px;
   font-size: 1.5rem;
 }

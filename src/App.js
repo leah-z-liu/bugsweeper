@@ -6,6 +6,9 @@ function App() {
   return (
     <Fragment>
       <h1>Welcome to Bugsweeper</h1>
+      <div class="btn">
+        <a href=".">Start again!</a>
+      </div>
       <Map />
     </Fragment>
   );

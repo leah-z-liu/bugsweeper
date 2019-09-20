@@ -10,7 +10,7 @@ export default class Map extends Component {
     this.state = {
       mapSize: 10,
       bugCount: 10,
-      theMap: populateMap(placeBugs(generateMap(10, 10), 10), 10),
+      theMap: populateMap(placeBugs(generateMap(10, 10), 15)),
       cellsClicked: 0
     };
   }
