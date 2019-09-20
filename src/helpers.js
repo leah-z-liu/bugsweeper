@@ -21,7 +21,7 @@ export function placeBugs(map, bugCount) {
 
     if (!map[bugRow][bugCol]) {
       map[bugRow][bugCol] = "bug";
-      bugs--;
+      bugCount--;
     }
   }
 
@@ -30,7 +30,7 @@ export function placeBugs(map, bugCount) {
 
 export function populateMap(map, bugCount) {
   const rows = map.length;
-  const col = map[0].length;
+  const cols = map[0].length;
 
   while (bugCount) {
     for (let i = 0; i < rows; i++) {
@@ -51,9 +51,11 @@ function addOneToNeighbors(map, i, j) {
   const cols = [j - 1, j + 1];
 
   for (let row of rows) {
-    for (let col of cols) {
-      if (map[row][col] !== "bug") {
-        map[row][col] = map[row][col] ? map[row][col]++ : 1;
+    if (map[row]) {
+      for (let col of cols) {
+        if (map[row][col] !== undefined && map[row][col] !== "bug") {
+          map[row][col] = map[row][col] ? map[row][col]++ : 1;
+        }
       }
     }
   }

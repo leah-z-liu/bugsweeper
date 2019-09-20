@@ -1,9 +1,14 @@
-import React from "react";
+import React, { Fragment } from "react";
 import Map from "./components/Map";
 import "./App.css";
 
 function App() {
-  return <Map />;
+  return (
+    <Fragment>
+      <h1>Welcome to Bugsweeper</h1>
+      <Map />
+    </Fragment>
+  );
 }
 
 export default App;
