@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/bugsweeper/static/css/main.a7bfaa43.chunk.css",
+    "main.js": "/bugsweeper/static/js/main.75ad089e.chunk.js",
+    "main.js.map": "/bugsweeper/static/js/main.75ad089e.chunk.js.map",
+    "runtime~main.js": "/bugsweeper/static/js/runtime~main.86b0ab02.js",
+    "runtime~main.js.map": "/bugsweeper/static/js/runtime~main.86b0ab02.js.map",
+    "static/js/2.e1c1f8c2.chunk.js": "/bugsweeper/static/js/2.e1c1f8c2.chunk.js",
+    "static/js/2.e1c1f8c2.chunk.js.map": "/bugsweeper/static/js/2.e1c1f8c2.chunk.js.map",
+    "index.html": "/bugsweeper/index.html",
+    "precache-manifest.48ae9274d7962e515f24f4ce59c831ea.js": "/bugsweeper/precache-manifest.48ae9274d7962e515f24f4ce59c831ea.js",
+    "service-worker.js": "/bugsweeper/service-worker.js",
+    "static/css/main.a7bfaa43.chunk.css.map": "/bugsweeper/static/css/main.a7bfaa43.chunk.css.map",
+    "static/media/bug.svg": "/bugsweeper/static/media/bug.13d04569.svg",
+    "static/media/face.svg": "/bugsweeper/static/media/face.8ab36a6d.svg"
+  }
+}
